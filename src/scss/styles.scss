@@ -1,12 +1,43 @@
-$theme-colors: (
-    "primary": #FF69B4
-);
+@import "node_modules/antd/dist/antd";
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body {
-    color: grey;
-    background: rgb(92,18,18);
-    height: 400vh;
+// footer 
+.footer {
+  padding-top: 4em;
+  position: relative;
+  z-index: 1;
+
+  .copyright {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 4rem;
+    text-align: center;
+    border-top: 1px solid #d8ebfd;
+  }
+
+  .contact-info {
+    list-style-type: none
+  }
 }
 
+// masonry
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto 0px auto;
+  padding: 20px;
+  border: solid 1px #d8ebfd;
+}
+
+.grid-item--width2 {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto 0px auto;
+  padding: 20px;
+  border: solid 1px #d8ebfd;
+}

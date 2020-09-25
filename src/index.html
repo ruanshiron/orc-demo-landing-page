@@ -1,13 +1,109 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <Button href="#" class="btn-primary"> primary button</Button>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header begin  -->
+  <nav class="navbar navbar-light bg-light" style="background-color: blueviolet !important;">
+    <a class="navbar-brand" href="#">
+      LOGO
+    </a>
+  </nav>
+  <!-- header end  -->
+
+  <!-- start area begin -->
+  <section class="container">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-lg-5" style="background-color: aqua;">
+        <div>
+          <h1>GHDC</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <a class="btn btn-primary" href="#">Explore</a>
+        </div>
+      </div>
+      <div class="col-lg-7" style="background-color: greenyellow; min-height: 300px;">
+        <!-- cover some stuff here -->
+      </div>
+    </div>
+  </section>
+  <!-- start area end -->
+
+  <!-- masonry begin -->
+  <section class="container">
+    <div class="grid">
+      <div class="grid-item" style="background-color: red;">...</div>
+      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
+      <div class="grid-item" style="background-color: violet;">...</div>
+      <div class="grid-item" style="background-color: green;">...</div>
+      <div class="grid-item" style="background-color: red;">...</div>
+      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
+      <div class="grid-item" style="background-color: violet;">...</div>
+      <div class="grid-item" style="background-color: green;">...</div>
+      <div class="grid-item" style="background-color: red;">...</div>
+      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
+      <div class="grid-item" style="background-color: violet;">...</div>
+      <div class="grid-item" style="background-color: green;">...</div>
+      <div class="grid-item" style="background-color: red;">...</div>
+      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
+      <div class="grid-item" style="background-color: violet;">...</div>
+      <div class="grid-item" style="background-color: green;">...</div>
+    </div>
+  </section>
+  <!-- masonry end -->
+
+  <!-- footer begin -->
+  <footer class="footer" style="background-color: beige">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>LOGO</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Address</h3>
+          <ul class="contact-info">
+            <li>
+              Duy Tan, Hanoi, Vietnam
+            </li>
+            <li>
+              <a href="#">example@example.com</a>
+            </li>
+            <li>
+              <a href="#">+123456789</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright" style="background-color: blanchedalmond;">
+        <p>Copyright @2020 GHDC. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script>
+    $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 250,
+      fitWidth: true
+    });
+  </script>
+</body>
+
 </html>
