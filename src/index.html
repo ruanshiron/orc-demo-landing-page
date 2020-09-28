@@ -8,34 +8,39 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
   <title>Demonstration</title>
 </head>
 
 <body>
   <!-- header begin  -->
-  <nav class="navbar navbar-light bg-light" style="background-color: blueviolet !important;">
-    <a class="navbar-brand" href="#">
-      LOGO
-    </a>
+  <nav class="navbar navbar-light py-3 bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        LOGO
+      </a>
+    </div>
   </nav>
   <!-- header end  -->
 
   <!-- start area begin -->
-  <section class="container">
+  <section class="container" style="min-height: 500px; margin-bottom: 40px;">
     <div class="row h-100 justify-content-center align-items-center">
-      <div class="col-lg-5" style="background-color: aqua;">
+      <div class="col-lg-5">
         <div>
-          <h1>GHDC</h1>
+          <h1 class="ant-typography">GHDC</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <a class="btn btn-primary" href="#">Explore</a>
+          <a class="ant-btn ant-btn-primary ant-btn-lg shadow-lg" href="#">Explore</a>
         </div>
       </div>
-      <div class="col-lg-7" style="background-color: greenyellow; min-height: 300px;">
-        <!-- cover some stuff here -->
+      <div class="col-lg-7 pt-4">
+        <img src="images/splash.svg" style="width: 100%;">
       </div>
     </div>
   </section>
@@ -44,88 +49,124 @@
   <!-- introduction begin -->
   <section class="container">
     <div class="row">
-      <div class="col-md-4 d-flex justify-content-center">
-        ...
+      <div class="col-md-4 text-center">
+        <i class="fas fa-robot fa-3x py-4" style="color: #EDC3FC;"></i>
+        <h2>AI</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+        </p>
       </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        ...
+      <div class="col-md-4 text-center">
+        <i class="fas fa-braille fa-3x py-4" style="color: #FBD4C6;"></i>
+        <h2>CV</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+        </p>
       </div>
-      <div class="col-md-4 d-flex justify-content-center">
-        ...
-      </div>
-      <div class="col-md-6 d-flex justify-content-center">
-        ...
-      </div>
-      <div class="col-md-6 d-flex justify-content-center">
-        ...
+      <div class="col-md-4 text-center">
+        <i class="fas fa-code fa-3x py-4" style="color: #CDF1D8;"></i>
+        <h2>CODE</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.
+        </p>
       </div>
     </div>
+    <br>
+    <hr>
   </section>
   <!-- introduction end -->
 
   <!-- masonry begin -->
-  <section class="container">
-    <div class="grid">
-      <div class="grid-item" style="background-color: red;">...</div>
-      <div class="grid-item" style="background-color: violet;">...</div>
-      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
-      <div class="grid-item" style="background-color: green;">...</div>
-      <div class="grid-item" style="background-color: red;">...</div>
-      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
-      <div class="grid-item" style="background-color: violet;">...</div>
-      <div class="grid-item" style="background-color: green;">...</div>
-      <div class="grid-item" style="background-color: red;">...</div>
-      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
-      <div class="grid-item" style="background-color: violet;">...</div>
-      <div class="grid-item" style="background-color: green;">...</div>
-      <div class="grid-item" style="background-color: red;">...</div>
-      <div class="grid-item grid-item--width2" style="background-color: blue;">...</div>
-      <div class="grid-item" style="background-color: violet;">...</div>
-      <div class="grid-item" style="background-color: green;">...</div>
+  <section class="container py-5">
+    <div class="text-center py-3">
+      <h1>Take what you care from here!</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <a class="model-block" href="/model.html">
+          <img src="images/orc_main.svg" alt="...">
+          <div class="model-content">
+            <h4 class="ant-typography" direction="ltr">ORC Legal Documents</h4>
+            <div class="ant-typography" direction="ltr" style="font-size: 13px;">
+              📃 This time, we will clearly explain one of our design values--「nature」, hoping to inspire you to
+              complete your own products or systems.
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-5">
+        <a class="model-block sub-block" href="/model.html">
+          <img src="images/orc_main.svg" alt="...">
+          <div class="model-content">
+            <h4 class="ant-typography" direction="ltr">Legal Documents</h4>
+            <div class="ant-typography" direction="ltr" style="font-size: 13px;">
+              📃 This time, we will clearly explain one of our design values--「nature」, hoping to inspire you to
+              complete your own products or systems.
+            </div>
+          </div>
+        </a>
+        <a class="model-block sub-block" href="/model.html">
+          <img src="images/orc_main.svg" alt="...">
+          <div class="model-content">
+            <h4 class="ant-typography" direction="ltr">Admintritive Documents</h4>
+            <div class="ant-typography" direction="ltr" style="font-size: 13px;">
+              📃 This time, we will clearly explain one of our design values--「nature」, hoping to inspire you to
+              complete your own products or systems.
+            </div>
+          </div>
+        </a>
+        <a class="model-block sub-block" href="/model.html">
+          <img src="images/orc_main.svg" alt="...">
+          <div class="model-content">
+            <h4 class="ant-typography" direction="ltr">Classify</h4>
+            <div class="ant-typography" direction="ltr" style="font-size: 13px;">
+              📃 This time, we will clearly explain one of our design values--「nature」, hoping to inspire you to
+              complete your own products or systems.
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
   <!-- masonry end -->
 
   <!-- footer begin -->
-  <footer class="footer" style="background-color: beige">
+  <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-8 col-md-6">
           <h3>LOGO</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-4 col-md-6">
           <h3>Address</h3>
-          <ul class="contact-info">
+          <ul class="fa-ul">
             <li>
-              Duy Tan, Hanoi, Vietnam
+              <span class="fa-li"><i class="far fa-address-book" aria-hidden="true"></i></span> Tầng 6, tòa nhà
+              HLTower, ngõ 82 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội
             </li>
             <li>
-              <a href="#">example@example.com</a>
+              <span class="fa-li"><i class="far fa-envelope" aria-hidden="true"></i></span> <a
+                href="#">contact@ghdc.vn</a>
             </li>
             <li>
-              <a href="#">+123456789</a>
+              <span class="fa-li"><i class="fas fa-phone" aria-hidden="true"></i></span> <a href="#">(84-2)
+                462811818</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="copyright" style="background-color: blanchedalmond;">
+      <div class="copyright">
         <p>Copyright @2020 GHDC. All rights reserved</p>
       </div>
     </div>
   </footer>
   <!-- footer end -->
-
-  <script>
-    $('.grid').masonry({
-      // options
-      itemSelector: '.grid-item',
-      columnWidth: 250,
-      fitWidth: true
-    });
-  </script>
 </body>
 
 </html>
